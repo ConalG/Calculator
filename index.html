@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
+</head>
+<body>
     <div class="calculator-grid">
         <div class="output">
-            <div class="previous-operand">123 +</div>
-            <div class="current-operand">456</div>
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
         </div>
         <button data-all-clear class="span-two">AC</button>
         <button data-delete>DEL</button>
@@ -31,8 +31,5 @@
         <button data-number>0</button>  
         <button data-eeuals class="span-two">=</button>
     </div>
-</head>
-<body>
-    
 </body>
 </html>
