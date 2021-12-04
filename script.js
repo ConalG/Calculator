@@ -12,34 +12,34 @@ class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement
         this.currentOperandTextElement = currentOperandTextElement
-        this.clear()
+        //this.clear()
     }
-}
+};
+
 // Clear operation
-clear() {
+function clear (){
     this.currentOperand = ''
     this.previousOperand = ''
     this.operation = undefined
 }
 
-delete(){
+function deleteAction(){
+
+};
+
+function appendNumber(number){
+    if (number === '.' && this.currentOperand.includes('.')) 
+    return this.currentOperand = this.currentOperand.toString() + number.toString()
+}
+function chooseOperation(operation){
 
 }
 
-appendNumber(number){
-    if (number === '.' && this.currentOperand.includes('.')) return
-    this.currentOperand = this.currentOperand.toString() + number.toString()
-}
-
-chooseOperation(operation){
+function compute(){
 
 }
 
-compute(){
-
-}
-
-updateDisplay(){
+function updateDisplay(){
     this.currentOperandTextElement.innerText = this.currentOperand;
 }
 
